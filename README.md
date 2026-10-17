@@ -1,4 +1,4 @@
-# esp32s3_kit - LILBIG4DEV ESP32-S3
+﻿# esp32s3_kit - LILBIG4DEV ESP32-S3
 
 A 35-slot offensive toolkit for the ESP32-S3. Wi-Fi recon and injection, BLE spam/scan/beacon, HID keyboard + mouse + DuckyScript, IR blast/recv, RF stubs, captive-portal delivery, pure-HID Android dropper, and an HTTP upload slot to push large payloads directly into LittleFS.
 
@@ -89,3 +89,14 @@ This repo includes push.ps1 for quick Windows commits.
 
 .\push.ps1 "init: ESP32-S3 firmware"
 .\push.ps1 "added new slot"
+
+---
+
+## One-Shot Deployment (Windows)
+
+If you have the Arduino IDE installed, you can compile, flash, and push to GitHub all in one command without ever opening the IDE GUI. The `deploy.ps1` script handles it all.
+
+Ensure the script is executable and run it from your PowerShell terminal:
+
+```powershell
+```
