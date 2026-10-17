@@ -1,4 +1,3 @@
-```markdown
 # esp32s3_kit - LILBIG4DEV ESP32-S3
 
 A 35-slot offensive toolkit for the ESP32-S3. Wi-Fi recon and injection, BLE spam/scan/beacon, HID keyboard + mouse + DuckyScript, IR blast/recv, RF stubs, captive-portal delivery, pure-HID Android dropper, and an HTTP upload slot to push large payloads directly into LittleFS.
@@ -12,12 +11,14 @@ A 35-slot offensive toolkit for the ESP32-S3. Wi-Fi recon and injection, BLE spa
 - USB: Native USB-Serial/JTAG
 
 ### Pin Map
+```text
 BTN_PIN 0 (short = next, long >=800ms = prev)
 LED_PIN 48
 TFT_CS 10 / TFT_DC 9 / TFT_RST 8 / TFT_BL 7
 IR_TX_PIN 4 / IR_RX_PIN 5
 CC1101_CS 21 / NRF24_CS 14
 GPS_RX 16 / GPS_TX 17 (UART2)
+```
 
 ## Setup Guide (Arduino IDE)
 
@@ -121,15 +122,3 @@ Ensure the script is executable and run it from your PowerShell terminal:
 2. Compiles the firmware using the bundled Arduino CLI.
 3. Flashes it to the board (reminds you to hold BOOT + RST if the USB drops).
 4. Commits the source code and pushes it to GitHub.
-```
-
-### 2. Save and push
-Save the file (`Ctrl+S`). 
-If you are in VS Code, check the bottom right corner and make sure it says **UTF-8** and **LF**.
-
-Then, go back to your PowerShell terminal and run:
-```powershell
-.\push.ps1 "docs: fix readme formatting and add screenshot"
-```
-
-This will push the clean, fully formatted markdown straight to GitHub. It will render perfectly.
