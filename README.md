@@ -23,12 +23,14 @@ GPS_RX 16 / GPS_TX 17 (UART2)
 ## Setup Guide (Arduino IDE)
 
 ### 1. Required Libraries
-You MUST install these 5 libraries via Sketch -> Include Library -> Manage Libraries:
+You MUST install these 7 libraries via Sketch -> Include Library -> Manage Libraries:
 1. Adafruit GFX Library
 2. Adafruit ST7735 and ST7789 Library
 3. Adafruit BusIO
 4. ArduinoJson
 5. IRremoteESP8266
+6. ESPAsyncWebServer
+7. AsyncTCP
 
 (Note: WiFi, BLEDevice, USBHID, WebServer, DNSServer, and LittleFS are built into the ESP32 core. Do not install separate copies.)
 
